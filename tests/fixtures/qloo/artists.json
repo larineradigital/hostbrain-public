@@ -1,0 +1,107 @@
+[
+  {
+    "id": "FIX-A-001",
+    "name": "Mara Solé",
+    "popularity": 0.82,
+    "genres": ["house", "electronic"],
+    "short_description": "Warm, groove-led house DJ and producer."
+  },
+  {
+    "id": "FIX-A-002",
+    "name": "The Velvet Tides",
+    "popularity": 0.77,
+    "genres": ["indie pop"],
+    "short_description": "Dreamy indie pop band with surf guitars."
+  },
+  {
+    "id": "FIX-A-003",
+    "name": "Neon Harbour",
+    "popularity": 0.71,
+    "genres": ["synthwave", "electronic"],
+    "short_description": "Night-drive synths and big choruses."
+  },
+  {
+    "id": "FIX-A-004",
+    "name": "Juniper Static",
+    "popularity": 0.64,
+    "genres": ["ambient", "electronic"],
+    "short_description": "Ambient textures built from field recordings."
+  },
+  {
+    "id": "FIX-A-005",
+    "name": "Okra Moon",
+    "popularity": 0.69,
+    "genres": ["afrobeat", "jazz"],
+    "short_description": "Brass-heavy afrobeat collective."
+  },
+  {
+    "id": "FIX-A-006",
+    "name": "Della Fairweather",
+    "popularity": 0.88,
+    "genres": ["country pop"],
+    "short_description": "Singalong country pop about small towns and road trips."
+  },
+  {
+    "id": "FIX-A-007",
+    "name": "The Paper Lanterns",
+    "popularity": 0.73,
+    "genres": ["folk"],
+    "short_description": "Harmony-rich folk trio."
+  },
+  {
+    "id": "FIX-A-008",
+    "name": "Kito & the Kites",
+    "popularity": 0.66,
+    "genres": ["kids", "pop"],
+    "short_description": "Bright, silly pop songs for families."
+  },
+  {
+    "id": "FIX-A-009",
+    "name": "Saudade Static",
+    "popularity": 0.58,
+    "genres": ["fado", "electronic"],
+    "short_description": "Traditional fado voices over slow electronics."
+  },
+  {
+    "id": "FIX-A-010",
+    "name": "Orla Brightwater",
+    "popularity": 0.8,
+    "genres": ["singer-songwriter"],
+    "short_description": "Piano ballads and quiet storytelling."
+  },
+  {
+    "id": "FIX-A-011",
+    "name": "Bassline Cartel",
+    "popularity": 0.7,
+    "genres": ["uk garage", "electronic"],
+    "short_description": "Shuffling garage beats and chopped vocals."
+  },
+  {
+    "id": "FIX-A-012",
+    "name": "Lumi Okafor",
+    "popularity": 0.75,
+    "genres": ["neo soul"],
+    "short_description": "Silky neo-soul vocalist."
+  },
+  {
+    "id": "FIX-A-013",
+    "name": "Grey Pines",
+    "popularity": 0.6,
+    "genres": ["post-rock"],
+    "short_description": "Long instrumental builds and crashing guitars."
+  },
+  {
+    "id": "FIX-A-014",
+    "name": "Coral Vasquez",
+    "popularity": 0.79,
+    "genres": ["latin pop"],
+    "short_description": "Sunny latin pop with dance beats."
+  },
+  {
+    "id": "FIX-A-015",
+    "name": "Tiny Thunder Choir",
+    "popularity": 0.55,
+    "genres": ["kids", "choir"],
+    "short_description": "A children's choir singing playground anthems."
+  }
+]

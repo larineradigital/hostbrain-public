@@ -1,0 +1,376 @@
+{
+  "landing": {
+    "title": "Your guests aren't the same. Why is your guidebook?",
+    "subtitle": "Host Brain gives every guest a personal guide and a concierge, built from their own taste with Qloo.",
+    "seeDemo": "See two guests, one flat",
+    "tryAsGuest": "Try it as a guest",
+    "hostLogin": "Host login",
+    "mockups": {
+      "title": "Same flat. Two guests. Two different trips.",
+      "caption": "Live from the demo: two guests at the {property} in {city}.",
+      "placeholder": "The demo guides appear here once they're seeded."
+    },
+    "how": {
+      "title": "How it works",
+      "steps": [
+        {
+          "title": "Add your place",
+          "body": "Your address and up to ten favourite spots. Five minutes, once."
+        },
+        {
+          "title": "Send the link",
+          "body": "Every guest gets their own link or QR code. No app, no sign-up."
+        },
+        {
+          "title": "Your guest gets their city",
+          "body": "Three quick taste questions, then places, a playlist, a film shelf and a concierge built around them."
+        }
+      ]
+    },
+    "different": {
+      "title": "Why it's different",
+      "body": "Ask an AI chatbot alone for restaurants and every guest gets much the same famous names, and some aren't near the flat at all. Host Brain asks Qloo's taste graph what people who love the same music and films actually go to. The language model only explains and talks.",
+      "aiAlone": "AI alone",
+      "aiAloneLine": "One list for everyone, nobody checks it.",
+      "withQloo": "With Qloo",
+      "withQlooLine": "Picks matched to each guest's taste, every one a real place nearby.",
+      "link": "See the comparison"
+    },
+    "hotels": {
+      "title": "For hotels",
+      "body": "Put a QR code in every room. Guests scan it, answer three quick questions and get a guide of their own, with no time at the front desk.",
+      "points": [
+        "One QR code per property",
+        "First name optional, nothing else asked",
+        "Works on any phone"
+      ]
+    },
+    "pricing": {
+      "title": "Pricing",
+      "plans": [
+        {
+          "name": "Free",
+          "price": "$0",
+          "unit": "1 property",
+          "line": "Everything, for one place."
+        },
+        {
+          "name": "Host",
+          "price": "$5",
+          "unit": "per property per month",
+          "line": "For hosts with a few places."
+        },
+        {
+          "name": "Hotel",
+          "price": "$49",
+          "unit": "per location per month",
+          "line": "Self-serve QR codes in every room."
+        }
+      ]
+    },
+    "footer": {
+      "builtWith": "Built with Qloo taste data",
+      "by": "Made by Larinera",
+      "github": "Source on GitHub"
+    }
+  },
+  "common": {
+    "appName": "Host Brain",
+    "pickedWithQloo": "Picked with Qloo taste data",
+    "limitsLine": "Based on aggregate taste patterns of people with similar interests, not a prediction about you.",
+    "madeWith": "Made with Host Brain"
+  },
+  "guest": {
+    "welcome": {
+      "greetingNamed": "Hi {name} 👋",
+      "greeting": "Hi there 👋",
+      "intro": "Your host {host} made you a personal guide to {city}. Tell us what you love and we'll pick places that fit you.",
+      "introNoHost": "Your host made you a personal guide to {city}. Tell us what you love and we'll pick places that fit you.",
+      "start": "Start (20 seconds)",
+      "skip": "Skip, surprise me",
+      "perksLabel": "What you'll get",
+      "perks": [
+        "Places to eat, drink and see, near your stay",
+        "A playlist and a film shelf for the trip",
+        "A concierge to ask while you're here"
+      ]
+    },
+    "quiz": {
+      "stepOf": "Step {step} of 3",
+      "music": {
+        "title": "Music you love",
+        "hint": "Pick up to 5 artists.",
+        "placeholder": "Search artists"
+      },
+      "media": {
+        "title": "Films and shows you love",
+        "hint": "Pick up to 5 films or series.",
+        "placeholder": "Search films and shows"
+      },
+      "food": {
+        "title": "Food and vibe",
+        "hint": "Tap what sounds like you.",
+        "cuisine": "Food and drink",
+        "vibe": "Vibe",
+        "dietary": "Dietary needs"
+      },
+      "popular": "Popular picks",
+      "results": "Results",
+      "noResults": "No matches yet. Try another spelling.",
+      "searchError": "Search is taking a break. Try again in a moment.",
+      "searching": "Searching…",
+      "full": "That's 5. Remove one to add another.",
+      "back": "Back",
+      "next": "Next",
+      "finish": "Build my guide",
+      "needOne": "Pick at least one thing, or let us surprise you.",
+      "skip": "Skip, surprise me",
+      "remove": "Remove {name}",
+      "clear": "Clear search",
+      "picked": "Your picks"
+    },
+    "building": {
+      "title": "Building your guide",
+      "subtitle": "Picking places near {street} with Qloo taste data.",
+      "done": "Done",
+      "openGuide": "Open your guide",
+      "failed": "We couldn't finish your guide.",
+      "retry": "Try again",
+      "elsewhere": "Your guide is being built. This page updates when it's ready."
+    },
+    "guide": {
+      "greetingNamed": "Hi {name},",
+      "greeting": "Hi there,",
+      "heroFallback": "Your {city}, picked for your taste",
+      "stayAt": "Staying at {property}",
+      "weather": {
+        "chip": "{temp}° and {condition} today",
+        "loading": "Checking the weather",
+        "conditions": {
+          "clear": "sunny",
+          "clearNight": "clear",
+          "partlyCloudy": "partly cloudy",
+          "cloudy": "cloudy",
+          "fog": "foggy",
+          "drizzle": "drizzly",
+          "rain": "rainy",
+          "snow": "snowy",
+          "storm": "stormy"
+        }
+      },
+      "nav": {
+        "label": "Sections",
+        "eat": "Eat",
+        "drink": "Drink",
+        "do": "Do",
+        "rainy": "Rainy day",
+        "host_picks": "Host’s picks",
+        "playlist": "Playlist",
+        "films": "Films",
+        "map": "Map"
+      },
+      "sections": {
+        "eat": "Eat",
+        "drink": "Drink",
+        "do": "Do",
+        "rainy": "Rainy day",
+        "host_picks": "Host’s picks for you",
+        "playlist": "Playlist for your stay",
+        "films": "Film shelf",
+        "map": "Your map"
+      },
+      "card": {
+        "walk": "{minutes} min walk",
+        "price": "Price level {level} of 4",
+        "openInMaps": "Open in Maps",
+        "openInMapsFor": "Open in Maps: {name}",
+        "whyThis": "Why this?",
+        "whyThisFor": "Why this? {name}",
+        "topMatch": "Top match for you",
+        "hostNote": "Your host says",
+        "hostNoteBy": "{host} says"
+      },
+      "playlist": {
+        "playAll": "Play all on Spotify",
+        "spotify": "Spotify",
+        "appleMusic": "Apple Music",
+        "spotifyFor": "Search {name} on Spotify",
+        "appleMusicFor": "Search {name} on Apple Music"
+      },
+      "media": {
+        "films": "Films",
+        "shows": "Shows for nights in"
+      },
+      "why": {
+        "title": "Why this?",
+        "aboutTitle": "How your guide was picked",
+        "aboutIntro": "Every place, artist and film here comes from Qloo’s taste data: what people who love the same things as you tend to love. Your host’s picks are ranked the same way.",
+        "aboutSignals": "What we used",
+        "signals": "What we used",
+        "noSignals": "Nothing from your answers, so these are the best-loved picks nearby.",
+        "ageBand": "Age group {band}",
+        "tasteTwinsTitle": "Your taste twins",
+        "tasteTwins": "People who share your taste skew {band}.",
+        "tasteTwinsNote": "Across everyone who loves the same picks as you, not a guess about you.",
+        "radius": "Within {distance} of your stay",
+        "city": "Around {city}",
+        "hostPick": "One of your host’s own spots",
+        "match": "Taste match",
+        "rank": "#{rank} of {total} in {section} for your taste",
+        "pulls": "How much each of your picks pulled this up",
+        "category": "Category: {category}",
+        "fromStay": "{distance} from your stay"
+      },
+      "map": {
+        "label": "Map of your picks",
+        "loading": "Loading the map",
+        "tasteMap": "Your taste map",
+        "tasteMapHint": "Warmer areas are where people with your taste tend to go.",
+        "home": "Your stay",
+        "legend": "Legend"
+      },
+      "footer": {
+        "houseNotes": "House notes",
+        "privacy": "Your name never leaves Host Brain. Qloo only sees your taste picks, an age group and this address. Questions to your concierge are answered by an AI model from OpenAI.",
+        "compare": "Compare: AI alone vs. with Qloo"
+      }
+    },
+    "concierge": {
+      "open": "Ask your concierge",
+      "title": "Your concierge",
+      "intro": "Plans, dinners, music for your stay. Every pick comes from Qloo taste data.",
+      "greeting": "Hi! What are you in the mood for? I can suggest places, music and films that fit your taste.",
+      "suggestedLabel": "Try asking",
+      "suggested": [
+        "Rainy day plan",
+        "Dinner for two tonight",
+        "Something for the kids",
+        "Late-night drinks"
+      ],
+      "inputLabel": "Message your concierge",
+      "placeholder": "Ask about food, drinks, plans or music",
+      "send": "Send",
+      "counter": "{count} of {max} characters",
+      "typing": "Your concierge is typing",
+      "working": {
+        "recommend_places": "Finding places that fit you",
+        "recommend_media": "Picking music and films for you",
+        "search_tags": "Looking up what you mean",
+        "get_weather": "Checking the weather",
+        "get_guide_items": "Looking through your guide",
+        "show_cards": "Laying out your picks"
+      },
+      "you": "You",
+      "concierge": "Concierge",
+      "picks": "Picks for you",
+      "disclaimer": "Your concierge suggests places; it can’t book or pay.",
+      "errors": {
+        "rateLimit": "You’ve asked a lot this hour. Please try again a little later.",
+        "generic": "Something went wrong. Please try again.",
+        "tooLong": "Please keep it under {max} characters."
+      },
+      "reply": {
+        "offline": "Your concierge is taking a short break. Your guide has picks for every mood in the meantime.",
+        "refusal": "Sorry, I can’t help with that one. I can suggest places to eat, drink and go, or music and films for your stay.",
+        "error": "Sorry, I couldn’t finish that. Please try again in a moment.",
+        "empty": "I couldn’t find a good fit for that. Could you tell me a bit more about what you’d like?"
+      }
+    },
+    "compare": {
+      "title": "AI alone vs. with Qloo",
+      "intro": "The same guest at the same place. On the left, an AI chatbot was asked for restaurants with no taste data. On the right, this guide’s Eat picks from Qloo.",
+      "back": "Back to the guide",
+      "tabsLabel": "Compare picks",
+      "aiAlone": "AI alone",
+      "withQloo": "With Qloo",
+      "aiAloneHint": "The AI-alone answer for “{guest}”. We checked every name with a Qloo search within {radius} of the stay.",
+      "withQlooHint": "Picked with Qloo taste data from this guest’s answers.",
+      "tasteTwins": "People who share this guest’s taste skew {band}: a pattern across everyone with the same picks, not a guess about the guest.",
+      "summaryTitle": "What we measured",
+      "summaryAi": "AI alone: {picks}, {notFound} not found near the property{generic}.",
+      "summaryAiGeneric": ", {generic} also suggested to other guests here",
+      "summaryQloo": "With Qloo: {picks}, {verified}{unique}.",
+      "summaryQlooAllVerified": "all verified nearby",
+      "summaryQlooVerified": "{verified} within {radius}",
+      "summaryQlooUnique": ", {unique} unique to this guest",
+      "summaryNoOthers": "Open the compare view for another guest at this property to see how much each list repeats.",
+      "pick": "1 pick",
+      "picks": "{count} picks",
+      "status": {
+        "verified": "Verified nearby",
+        "not_found": "Not found nearby",
+        "unchecked": "Couldn’t check"
+      },
+      "foundAs": "Qloo found “{name}”, {distance} away",
+      "found": "Qloo found it {distance} away",
+      "generic": "Also suggested to another guest",
+      "loading": "Asking an AI chatbot for picks without taste data…",
+      "unavailable": "The AI-alone column needs an OpenAI API key on the server. The Qloo picks are on the right.",
+      "failed": "We couldn’t get the AI-alone picks right now. Please try again later.",
+      "noEat": "This guide has no Eat section to compare.",
+      "measured": "Checked {date} with Qloo search. Names on the left are shown as text only."
+    },
+    "selfServe": {
+      "title": "Your guide to {city}",
+      "intro": "Tell us a little about your stay at {property}, then pick what you love. We’ll build a guide around your taste.",
+      "firstName": "Your first name (optional)",
+      "firstNameHint": "Only used to greet you. It never leaves Host Brain.",
+      "checkIn": "Arriving",
+      "checkOut": "Leaving",
+      "partyType": "Who’s travelling?",
+      "party": {
+        "solo": "Just me",
+        "couple": "Couple",
+        "family": "Family",
+        "friends": "Friends",
+        "business": "Work trip"
+      },
+      "start": "Start (20 seconds)",
+      "starting": "Starting…",
+      "rateLimited": "Lots of guests are starting guides right now. Please try again in a few minutes.",
+      "error": "Something went wrong. Please try again.",
+      "check": "Please check the highlighted fields.",
+      "unavailableTitle": "This guide link isn’t active",
+      "unavailable": "Ask the front desk for a new code."
+    }
+  },
+  "demo": {
+    "title": "Two guests, one flat",
+    "subtitle": "{a} and {b} are both staying at the {property} in {city}. Same address, same host. Here's what Qloo picked for each of them.",
+    "overlap": "{shared} of their {total} places are the same.",
+    "overlapNone": "Not one of their {total} places is the same.",
+    "taste": "Their taste",
+    "sections": {
+      "eat": "Eat",
+      "drink": "Drink",
+      "do": "Do",
+      "playlist": "Playlist",
+      "films": "Film shelf"
+    },
+    "openGuide": "Open {name}'s guide",
+    "openGuideNoName": "Open the guide",
+    "compare": "Open the compare view",
+    "compareHint": "AI alone vs. with Qloo, for this guest's restaurants.",
+    "notReady": "This guide is still being made. Try again in a minute.",
+    "empty": "The demo guides aren't here yet. Run scripts/seed-demo.ts to create them.",
+    "tabs": "Demo guests",
+    "try": {
+      "title": "Try it as a guest",
+      "body": "Answer three quick questions and get your own guide to the same flat.",
+      "button": "Try as a guest",
+      "pending": "Making your guide…",
+      "paused": "Live guide-making is paused for a moment, so here's a guide we made earlier.",
+      "busy": "Lots of people are trying the demo right now, so here's a guide we made earlier.",
+      "missing": "The demo isn't set up yet.",
+      "openReady": "Open a ready-made guide"
+    },
+    "hostLogin": "Log in as the demo host"
+  },
+  "login": {
+    "demoButton": "Log in as the demo host",
+    "demoHint": "Demo mode: see the host dashboard with the demo flats, no email needed.",
+    "demoMissing": "The demo host isn't set up yet. Run scripts/seed-demo.ts first.",
+    "demoError": "We couldn't sign you in as the demo host. Please try again.",
+    "or": "or use your own email"
+  }
+}

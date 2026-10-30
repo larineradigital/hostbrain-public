@@ -1,0 +1,25 @@
+# Railway config for the web service (https://hostbrain.larinera.com). Setup: README.md, Deploy.
+# The daily cleanup cron is a second service with its own file: railway.cron.toml.
+
+[build]
+builder = "RAILPACK"
+# `pnpm install` runs the postinstall MapLibre worker copy; `pnpm build` is
+# `next build && pnpm check:bundle`, so a bundle that leaks a server secret fails the deploy.
+buildCommand = "pnpm install --frozen-lockfile && pnpm build"
+
+[deploy]
+# `next start` reads $PORT (Railway sets it) and binds 0.0.0.0.
+startCommand = "pnpm start"
+healthcheckPath = "/api/health"
+healthcheckTimeout = 120
+restartPolicyType = "ON_FAILURE"
+restartPolicyMaxRetries = 5
+# A guide generation or concierge turn streams for up to 60 s: let the old instance finish
+# them before it stops on a redeploy.
+drainingSeconds = 60
+
+# One instance only. The per-IP and per-guide rate limits (lib/rate-limit.ts) and the Qloo
+# throttle (4 req/s, 2 in flight, lib/qloo/client.ts) live in memory, so a second replica
+# would double them. EU West (Amsterdam), next to the EU Supabase project.
+[deploy.multiRegionConfig.europe-west4-drams3a]
+numReplicas = 1

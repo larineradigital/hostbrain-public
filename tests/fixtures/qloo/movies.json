@@ -1,0 +1,110 @@
+[
+  {
+    "id": "FIX-M-001",
+    "name": "A Quiet Tram to Nowhere",
+    "release_year": 2023,
+    "content_rating": "PG-13",
+    "popularity": 0.78,
+    "genres": ["drama", "romance"],
+    "short_description": "Two strangers keep missing the same night tram."
+  },
+  {
+    "id": "FIX-M-002",
+    "name": "Saltwater Postcards",
+    "release_year": 2022,
+    "content_rating": "R",
+    "popularity": 0.72,
+    "genres": ["drama"],
+    "short_description": "A father and daughter's last holiday by the sea, remembered years later."
+  },
+  {
+    "id": "FIX-M-003",
+    "name": "The Clockmaker's Garden",
+    "release_year": 2019,
+    "content_rating": "PG",
+    "popularity": 0.69,
+    "genres": ["fantasy", "family"],
+    "short_description": "A girl finds a garden where time runs backwards."
+  },
+  {
+    "id": "FIX-M-004",
+    "name": "Orbit of Small Things",
+    "release_year": 2021,
+    "content_rating": "PG-13",
+    "popularity": 0.74,
+    "genres": ["sci-fi", "drama"],
+    "short_description": "An astronaut's family waits through one long mission."
+  },
+  {
+    "id": "FIX-M-005",
+    "name": "Little Kite Rescue",
+    "release_year": 2020,
+    "content_rating": "G",
+    "popularity": 0.85,
+    "genres": ["animation", "family"],
+    "short_description": "A paper kite crosses the city to find its owner."
+  },
+  {
+    "id": "FIX-M-006",
+    "name": "Harbour of Echoes",
+    "release_year": 2018,
+    "content_rating": "R",
+    "popularity": 0.63,
+    "genres": ["thriller"],
+    "short_description": "A sound engineer hears a crime in a harbour recording."
+  },
+  {
+    "id": "FIX-M-007",
+    "name": "The Fig Tree Year",
+    "release_year": 2024,
+    "content_rating": "PG-13",
+    "popularity": 0.67,
+    "genres": ["comedy", "drama"],
+    "short_description": "Three siblings spend a year restoring their grandmother's farm."
+  },
+  {
+    "id": "FIX-M-008",
+    "name": "Pocket Dragons",
+    "release_year": 2017,
+    "content_rating": "PG",
+    "popularity": 0.81,
+    "genres": ["animation", "adventure"],
+    "short_description": "Tiny dragons hide in a school backpack."
+  },
+  {
+    "id": "FIX-M-009",
+    "name": "Snow on Marigold Street",
+    "release_year": 2016,
+    "content_rating": "PG",
+    "popularity": 0.7,
+    "genres": ["romance", "comedy"],
+    "short_description": "A rare snowfall traps a street of neighbours together."
+  },
+  {
+    "id": "FIX-M-010",
+    "name": "Afterglow Tapes",
+    "release_year": 2023,
+    "content_rating": "R",
+    "popularity": 0.66,
+    "genres": ["music", "drama"],
+    "short_description": "A DJ rebuilds her life from a box of old mixtapes."
+  },
+  {
+    "id": "FIX-M-011",
+    "name": "The Lighthouse Letters",
+    "release_year": 2015,
+    "content_rating": "PG-13",
+    "popularity": 0.62,
+    "genres": ["mystery"],
+    "short_description": "Letters found in a lighthouse point to a decades-old secret."
+  },
+  {
+    "id": "FIX-M-012",
+    "name": "Big Sky Bakery",
+    "release_year": 2022,
+    "content_rating": "G",
+    "popularity": 0.76,
+    "genres": ["animation", "family"],
+    "short_description": "A bakery on a cloud delivers bread by balloon."
+  }
+]

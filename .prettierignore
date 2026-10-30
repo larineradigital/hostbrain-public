@@ -1,0 +1,6 @@
+pnpm-lock.yaml
+.next
+docs
+components/ui
+*.md
+public/vendor

@@ -1,0 +1,74 @@
+[
+  {
+    "id": "FIX-T-001",
+    "name": "The Night Shift Bakers",
+    "release_year": 2022,
+    "content_rating": "TV-14",
+    "popularity": 0.79,
+    "genres": ["drama", "comedy"],
+    "short_description": "A chaotic kitchen crew keeps a bakery alive overnight."
+  },
+  {
+    "id": "FIX-T-002",
+    "name": "Fixture Bay",
+    "release_year": 2021,
+    "content_rating": "TV-14",
+    "popularity": 0.7,
+    "genres": ["mystery"],
+    "short_description": "A seaside town where every summer someone vanishes."
+  },
+  {
+    "id": "FIX-T-003",
+    "name": "Puddle Patrol",
+    "release_year": 2020,
+    "content_rating": "TV-Y",
+    "popularity": 0.84,
+    "genres": ["animation", "kids"],
+    "short_description": "Three puppies who love rainy days."
+  },
+  {
+    "id": "FIX-T-004",
+    "name": "Small Town Signals",
+    "release_year": 2019,
+    "content_rating": "TV-PG",
+    "popularity": 0.66,
+    "genres": ["comedy"],
+    "short_description": "A failing local radio station and its odd listeners."
+  },
+  {
+    "id": "FIX-T-005",
+    "name": "Kitchen Cartography",
+    "release_year": 2023,
+    "content_rating": "TV-PG",
+    "popularity": 0.72,
+    "genres": ["documentary", "food"],
+    "short_description": "A chef maps a country one family recipe at a time."
+  },
+  {
+    "id": "FIX-T-006",
+    "name": "Paper Rockets",
+    "release_year": 2018,
+    "content_rating": "TV-Y7",
+    "popularity": 0.75,
+    "genres": ["animation", "family"],
+    "short_description": "Kids build rockets from homework and actually fly them."
+  },
+  {
+    "id": "FIX-T-007",
+    "name": "The Long Weekend Club",
+    "release_year": 2024,
+    "content_rating": "TV-MA",
+    "popularity": 0.68,
+    "genres": ["drama"],
+    "short_description": "Old university friends reunite every year at the same house."
+  },
+  {
+    "id": "FIX-T-008",
+    "name": "Tidal Lines",
+    "release_year": 2022,
+    "content_rating": "TV-14",
+    "popularity": 0.61,
+    "genres": ["thriller"],
+    "short_description": "A harbour pilot uncovers smuggling on her own boat."
+  }
+]

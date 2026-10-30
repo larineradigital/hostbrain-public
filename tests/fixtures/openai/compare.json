@@ -1,0 +1,82 @@
+{
+  "_comment": "Synthetic, invented AI-alone answers for the compare view (COMPARE_MODE=replay), in the structured-output shape the model returns (lib/ai/compare-replay.ts serves each as a Responses API output_text). Not a recorded live response. Some names match mock Qloo places near the property (verified), one matches a mock place outside 2 km, the rest are fictional and unknown to mock Qloo (not found). The two guests share three names, so the second one compared shows them as generic.",
+  "answers": [
+    {
+      "name": "couple",
+      "match": "Mara Solé",
+      "output_parsed": {
+        "restaurants": [
+          {
+            "name": "Casa Marmelo"
+          },
+          {
+            "name": "The Tram Stop Tavern"
+          },
+          {
+            "name": "Lantern & Ladle"
+          },
+          {
+            "name": "Sardine Story Kitchen"
+          },
+          {
+            "name": "Harbour Lights Bistro"
+          },
+          {
+            "name": "Vinho Fantasma"
+          }
+        ]
+      }
+    },
+    {
+      "name": "family",
+      "match": "Kito & the Kites",
+      "output_parsed": {
+        "restaurants": [
+          {
+            "name": "Casa Marmelo"
+          },
+          {
+            "name": "The Tram Stop Tavern"
+          },
+          {
+            "name": "Lantern & Ladle"
+          },
+          {
+            "name": "Tasca Faz de Conta"
+          },
+          {
+            "name": "Pastel Palace of the Old Town"
+          },
+          {
+            "name": "Ondas Grill House"
+          }
+        ]
+      }
+    }
+  ],
+  "fallback": {
+    "name": "anyone",
+    "output_parsed": {
+      "restaurants": [
+        {
+          "name": "Casa Marmelo"
+        },
+        {
+          "name": "The Tram Stop Tavern"
+        },
+        {
+          "name": "Lantern & Ladle"
+        },
+        {
+          "name": "Sardine Story Kitchen"
+        },
+        {
+          "name": "Pastel Palace of the Old Town"
+        },
+        {
+          "name": "Harbour Lights Bistro"
+        }
+      ]
+    }
+  }
+}

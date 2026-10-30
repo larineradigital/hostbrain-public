@@ -1,0 +1,164 @@
+{
+  "_about": "Synthetic concierge replies in Responses API shape (output items without ids; lib/ai/replay.ts adds ids and streams them as server-sent events), recorded by hand against mock Qloo for the guests in tests/fixtures/concierge-guests.ts (lib/demo/personas.ts). FIX- IDs only, never real responses. Served when CONCIERGE_MODE=replay. A conversation is picked by `match` in the guest's latest message; each turn is one model request in the tool loop, and function_call arguments follow the strict tool schemas (unused optional fields are null).",
+  "conversations": [
+    {
+      "name": "rainy-kids",
+      "match": "raining and the kids",
+      "turns": [
+        {
+          "status": "completed",
+          "output": [
+            {
+              "type": "function_call",
+              "name": "get_weather",
+              "arguments": "{\"date\":\"today\"}"
+            },
+            {
+              "type": "function_call",
+              "name": "recommend_places",
+              "arguments": "{\"category\":\"indoor\",\"extra_tags\":null,\"radius_m\":3000,\"price\":null,\"count\":6}"
+            }
+          ]
+        },
+        {
+          "status": "completed",
+          "output": [
+            {
+              "type": "function_call",
+              "name": "show_cards",
+              "arguments": "{\"items\":[{\"entity_id\":\"FIX-P-018\",\"reason\":\"A family-friendly science museum, popular with fans of Little Kite Rescue\"},{\"entity_id\":\"FIX-P-031\",\"reason\":\"A cosy cinema afternoon, loved by families who like Kito & the Kites\"},{\"entity_id\":\"FIX-P-017\",\"reason\":\"Maps and models to explore, 800 m away and popular with families like yours\"}]}"
+            }
+          ]
+        },
+        {
+          "status": "completed",
+          "output": [
+            {
+              "type": "message",
+              "role": "assistant",
+              "content": [
+                {
+                  "type": "output_text",
+                  "text": "Indoor it is. Here are three spots nearby that families with your taste tend to love, all under a 20-minute walk."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "romantic-dinner",
+      "match": "romantic dinner",
+      "turns": [
+        {
+          "status": "completed",
+          "output": [
+            {
+              "type": "function_call",
+              "name": "recommend_places",
+              "arguments": "{\"category\":\"eat\",\"extra_tags\":[\"romantic\"],\"radius_m\":null,\"price\":\"mid\",\"count\":6}"
+            }
+          ]
+        },
+        {
+          "status": "completed",
+          "output": [
+            {
+              "type": "function_call",
+              "name": "show_cards",
+              "arguments": "{\"items\":[{\"entity_id\":\"FIX-P-001\",\"reason\":\"Popular with people who love Mara Solé, and just 200 m from your door\"},{\"entity_id\":\"FIX-P-006\",\"reason\":\"Good vegetarian options, and a favourite of Bassline Cartel fans\"},{\"entity_id\":\"FIX-P-004\",\"reason\":\"Relaxed and easy on the wallet, popular with people who love Mara Solé\"},{\"entity_id\":\"FIX-P-404\",\"reason\":\"An invented pick that the server must drop\"}]}"
+            }
+          ]
+        },
+        {
+          "status": "completed",
+          "output": [
+            {
+              "type": "message",
+              "role": "assistant",
+              "content": [
+                {
+                  "type": "output_text",
+                  "text": "Three relaxed places for dinner tonight, none of them pricey. People with your taste in music rate all three."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "music-tonight",
+      "match": "music like",
+      "turns": [
+        {
+          "status": "completed",
+          "output": [
+            {
+              "type": "function_call",
+              "name": "search_tags",
+              "arguments": "{\"query\":\"club\"}"
+            }
+          ]
+        },
+        {
+          "status": "completed",
+          "output": [
+            {
+              "type": "function_call",
+              "name": "recommend_places",
+              "arguments": "{\"category\":\"late_night\",\"extra_tags\":[\"urn:tag:genre:place:night_club\"],\"radius_m\":3000,\"price\":null,\"count\":6}"
+            }
+          ]
+        },
+        {
+          "status": "completed",
+          "output": [
+            {
+              "type": "function_call",
+              "name": "show_cards",
+              "arguments": "{\"items\":[{\"entity_id\":\"FIX-P-024\",\"reason\":\"A live music venue and club, popular with people who love Bassline Cartel\"},{\"entity_id\":\"FIX-P-025\",\"reason\":\"Live music, and a favourite of Mara Solé fans\"},{\"entity_id\":\"FIX-P-012\",\"reason\":\"Cocktails and a jazz club in one, loved by people with your taste\"}]}"
+            }
+          ]
+        },
+        {
+          "status": "completed",
+          "output": [
+            {
+              "type": "message",
+              "role": "assistant",
+              "content": [
+                {
+                  "type": "output_text",
+                  "text": "For dancing tonight, these three are where people who love Mara Solé and Bassline Cartel tend to go."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "fallback": {
+    "name": "fallback",
+    "match": "",
+    "turns": [
+      {
+        "status": "completed",
+        "output": [
+          {
+            "type": "message",
+            "role": "assistant",
+            "content": [
+              {
+                "type": "output_text",
+                "text": "I can help with places to eat, drink and go, and music or films for your stay. What would you like?"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

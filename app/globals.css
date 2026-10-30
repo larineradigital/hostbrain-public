@@ -1,0 +1,224 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+@custom-variant dark (&:is(.dark *));
+
+/*
+ * Design tokens. Ours (--bg, --surface, --tint, --ink, --ink-muted, --line, --line-strong,
+ * --brand, --brand-soft, --accent-ink, --olive, --sea, --plum) are the source of truth; the
+ * shadcn variables below are mapped onto them so shadcn components pick them up.
+ *
+ * Naming note: the terracotta "accent" is exposed as --brand
+ * (Tailwind: bg-brand, text-brand) and as shadcn's --primary, because shadcn
+ * already uses --accent for neutral hover backgrounds.
+ */
+:root {
+  --bg: #ffffff;
+  --surface: #ffffff;
+  --tint: #f6f5f3;
+  --tint-strong: #edebe7;
+  --ink: #1f1d1b;
+  --ink-muted: #6a6661;
+  --line: #e6e3df;
+  --line-strong: #cfcac4;
+  --brand: #b94a24;
+  --brand-hover: #a3401e;
+  --brand-soft: #fbeee8;
+  --accent-ink: #ffffff;
+  --olive: #5e6b3a;
+  --sea: #2f6b7a;
+  --plum: #6d3b5a;
+  --scrim: rgb(20 18 16 / 0.45);
+
+  --shadow-card: 0 1px 2px rgb(31 29 27 / 0.04), 0 4px 14px rgb(31 29 27 / 0.06);
+  --shadow-lift: 0 2px 6px rgb(31 29 27 / 0.06), 0 14px 32px rgb(31 29 27 / 0.12);
+  --shadow-float: 0 4px 12px rgb(31 29 27 / 0.08), 0 10px 32px rgb(31 29 27 / 0.12);
+  --radius: 0.75rem;
+
+  /* shadcn mapping */
+  --background: var(--bg);
+  --foreground: var(--ink);
+  --card: var(--surface);
+  --card-foreground: var(--ink);
+  --popover: var(--surface);
+  --popover-foreground: var(--ink);
+  --primary: var(--brand);
+  --primary-foreground: var(--accent-ink);
+  --secondary: var(--tint);
+  --secondary-foreground: var(--ink);
+  --muted: var(--tint);
+  --muted-foreground: var(--ink-muted);
+  --accent: var(--tint);
+  --accent-foreground: var(--ink);
+  --destructive: #b42318;
+  --border: var(--line);
+  --input: var(--line-strong);
+  --ring: var(--brand);
+}
+
+.dark {
+  --bg: #121110;
+  --surface: #1c1b19;
+  --tint: #262422;
+  --tint-strong: #312e2b;
+  --ink: #f4f2ef;
+  --ink-muted: #a9a49d;
+  --line: #2f2c29;
+  --line-strong: #4a4541;
+  --brand: #e8825c;
+  --brand-hover: #f09670;
+  --brand-soft: #2e211b;
+  --accent-ink: #141312;
+  --olive: #9daa73;
+  --sea: #6fb1c2;
+  --plum: #c08aae;
+  --scrim: rgb(0 0 0 / 0.6);
+
+  --shadow-card: 0 1px 2px rgb(0 0 0 / 0.3);
+  --shadow-lift: 0 2px 6px rgb(0 0 0 / 0.35), 0 14px 32px rgb(0 0 0 / 0.45);
+  --shadow-float: 0 4px 12px rgb(0 0 0 / 0.4), 0 10px 32px rgb(0 0 0 / 0.5);
+  --destructive: #f97066;
+}
+
+@theme inline {
+  /* plan tokens */
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-ink: var(--ink);
+  --color-ink-muted: var(--ink-muted);
+  --color-line: var(--line);
+  --color-line-strong: var(--line-strong);
+  --color-brand: var(--brand);
+  --color-brand-hover: var(--brand-hover);
+  --color-brand-soft: var(--brand-soft);
+  --color-accent-ink: var(--accent-ink);
+  --color-olive: var(--olive);
+  --color-sea: var(--sea);
+  --color-plum: var(--plum);
+  --color-tint: var(--tint);
+  --color-tint-strong: var(--tint-strong);
+  --color-scrim: var(--scrim);
+
+  /* section colours */
+  --color-section-eat: var(--brand);
+  --color-section-drink: var(--olive);
+  --color-section-do: var(--sea);
+  --color-section-rainy: var(--ink-muted);
+  --color-section-picks: var(--brand);
+  --color-section-media: var(--plum);
+
+  /* shadcn */
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  /* type: one sans (Plus Jakarta Sans) for everything; scale 36/26/20/16/14/12 */
+  --font-sans: var(--font-jakarta), ui-sans-serif, system-ui, sans-serif;
+  --text-display: 2.25rem;
+  --text-display--line-height: 1.1;
+  --text-display--letter-spacing: -0.02em;
+  --text-title: 1.625rem;
+  --text-title--line-height: 1.2;
+  --text-title--letter-spacing: -0.02em;
+  --text-heading: 1.25rem;
+  --text-heading--line-height: 1.3;
+  --text-heading--letter-spacing: -0.015em;
+
+  /* shape: 12 px controls, 16 px cards, 24 px sheets */
+  --radius-sm: calc(var(--radius) * 0.5);
+  --radius-md: calc(var(--radius) * 0.75);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+  --radius-3xl: calc(var(--radius) + 12px);
+  --shadow-card: var(--shadow-card);
+  --shadow-lift: var(--shadow-lift);
+  --shadow-float: var(--shadow-float);
+
+  /* layout widths */
+  --container-guide: 1080px;
+  --container-reading: 720px;
+  --container-dashboard: 1200px;
+
+  /* motion: 150–250 ms, calm */
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --default-transition-duration: 200ms;
+  --default-transition-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  html {
+    -webkit-text-size-adjust: 100%;
+  }
+  body {
+    @apply bg-background font-sans text-foreground;
+    line-height: 1.5;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-semibold tracking-tight;
+  }
+  h1 {
+    @apply font-bold;
+  }
+  ::selection {
+    @apply bg-brand-soft text-ink;
+  }
+}
+
+@layer utilities {
+  /* Horizontal scrollers (pill nav, shelves) without a visible scrollbar. */
+  .no-scrollbar {
+    scrollbar-width: none;
+  }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  /* Cards that rise a little on hover (pointer devices only). */
+  .lift {
+    transition:
+      transform 200ms var(--ease-out),
+      box-shadow 200ms var(--ease-out);
+  }
+  @media (hover: hover) {
+    .lift:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-lift);
+    }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .lift:hover {
+    transform: none;
+  }
+}

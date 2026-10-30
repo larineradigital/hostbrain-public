@@ -1,0 +1,17 @@
+# Railway config for the daily cleanup cron service (scripts/cleanup.ts, retention).
+# Point the cron service at this file: Settings → Config-as-code → /railway.cron.toml.
+# It also keeps the free Supabase project from pausing after 7 idle days. Setup: README.md, Deploy.
+#
+# Variables: NEXT_PUBLIC_SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY and QLOO_MODE (reference the
+# web service's values).
+
+[build]
+builder = "RAILPACK"
+# No `next build`: the job only needs the dependencies (tsx runs the script).
+buildCommand = "pnpm install --frozen-lockfile"
+
+[deploy]
+startCommand = "pnpm cleanup --env production"
+# Every day at 03:00 UTC. The process exits when done; Railway skips a run while one is active.
+cronSchedule = "0 3 * * *"
+restartPolicyType = "NEVER"
